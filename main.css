@@ -43,24 +43,51 @@ img{
 }
 
 /*================================================================*/
-
-#main-form input{
+#main-form2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height : 320px;
+}
+#main-form2 input{
     width: 350px;
     height: 50px;
     font-size: 25px;
+    border:1px solid;
+    border-color:brown;
+}
+#main-form2 h2{
+    font-size:35px;
+    color:gold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
 }
 #option{
     text-align: center;
     align-items: center;
     justify-content: center;
+    top : -10px;
 }
 #option button {
-    height:100px;
-    width:255px;
+    background-color:grey;
+    color:wheat;
+    height : 50px;
+    width : 250px;
+    border-radius: 20px;
+    border-color: purple;
+    font-size: 25px;
+    font-family: monospace;
+}
+#option button:hover{
+    background-color:gold;
+    color:green;
 }
 #outputs{
     text-align: center;
     padding:10px;
+    color : gold;
 }
 #outputs input{
     height : 500px;
@@ -79,10 +106,24 @@ img{
     display: flex;
     flex-direction: row;
     width: 85%;
-    height: 150px;
+    height: 100px;
+    top:-40px;
     position: relative;
 }
-.dadu1{
+#atas{
+    height :100px;
+}
+#atas h1{
+    font-size : 50px;
+    margin : 0 10px;
+    color : greenyellow;
+    font-family: 'Times New Roman', Times, serif;
+}
+#atas h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size : 35px;
+}
+#dadu1{
     width: 150px;
     height: 60px;
     border: 5px solid rgb(255, 244, 128);
@@ -100,7 +141,7 @@ img{
     font-size: 26px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
-.dadu2{
+#dadu2{
     width: 150px;
     height: 60px;
     border: 5px solid rgb(255, 244, 128);
@@ -118,7 +159,7 @@ img{
     font-size: 26px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
-.dadu3{
+#dadu3{
     width: 150px;
     height: 60px;
     border: 5px solid rgb(255, 244, 128);
@@ -136,7 +177,7 @@ img{
     font-size: 26px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
-.result{
+#jumlah{
     width: 150px;
     height: 50px;
     border: 5px solid rgba(250, 51, 2, 0.899);
@@ -154,18 +195,119 @@ img{
     font-size: 23px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
+#jumlah{
+    top : -15px;
+}
 #after-middle{
-    padding:10px;
+    top : -20px;
 }
-button{
-    border-radius: 10px;
-    width : 250px;
-    height : 100px;
-    background-color: grey;
-    color:blanchedalmond;
-    font-size : 35px;
+#main-form1{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
-button:hover{
-    background-color: gold;
-    color: red;
+#after-middle button {
+    background-color:grey;
+    color:wheat;
+    height : 50px;
+    width : 200px;
+    border-radius: 20px;
+    border-color: purple;
+    font-size: 38px;
+    font-family: monospace;
+}
+#after-middle button:hover{
+    background-color:gold;
+    color:green;
+}
+
+/*=================================*/
+
+#sec-form1{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height : 200px;
+}
+#sec-form1 img{
+    height: 200px;
+    width : 200px;
+    opacity: 8px;
+}
+#main-formswt{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main-formswt .h2{
+    font-size: 25px;
+    padding : 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*===============================*/
+
+
+#bawah {
+    height : 150px;
+    display : flex;
+    flex-direction: row;
+}
+#ig{
+    width: 50px;
+    height:50px;
+}
+#mail{
+    width: 65px;
+    height:65px;
+    margin:-10px -10px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#pilihancomputer{
+    width: 150px;
+    height: 60px;
+    border: 5px solid rgb(255, 244, 128);
+    position: relative;
+    left: 3%;
+    margin-left: -75px;
+    top: 45%;
+    margin-top: -20px;
+    background-color: rgb(152, 146, 146);
+    border-radius: 30px;
+    z-index: 1;
+    text-align: center;
+    line-height: 60px;
+    color: #f89bb4;
+    font-size: 26px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+#hasiloutput{
+    width: 150px;
+    height: 60px;
+    border: 5px solid rgb(255, 244, 128);
+    position: relative;
+    left: 3%;
+    margin-left: -75px;
+    margin-top: 10px;
+    background-color: rgb(152, 146, 146);
+    border-radius: 30px;
+    z-index: 1;
+    text-align: center;
+    line-height: 60px;
+    color: #f89bb4;
+    font-size: 26px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }

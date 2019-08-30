@@ -45,19 +45,3 @@ button2.addEventListener('click',function(){
         }
     metu.innerHTML = hasil
 })
-
-var button3 = option.children[2]
-button3.addEventListener('click',function(){
-    let hasil = ''
-    let angkaa = document.getElementById('angka').value;
-    if(angkaa<3||angkaa>22){
-        return alert('Invalid Input')
-    }
-    for(var i=0; i<angkaa; i++){
-            for(var j=0; j<=i; j++){
-                hasil+='*'
-            }
-            hasil+='<br>'
-        }
-    metu.innerHTML = hasil;
-})
