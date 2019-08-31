@@ -6,6 +6,9 @@
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+#main-form .h2{
+    margin: 0px 10px;
+}
 body{
     background-color:grey;
 }
@@ -107,7 +110,7 @@ img{
     flex-direction: row;
     width: 85%;
     height: 100px;
-    top:-40px;
+    top:-20px;
     position: relative;
 }
 #atas{
@@ -123,7 +126,20 @@ img{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size : 35px;
 }
-#dadu1{
+#after-middle submit{
+    border-radius: 20px;
+    margin: 100px 40px;
+    text-align: center;
+    font-size: 50px;
+    top:20px;
+    position: relative;
+    background-color: mediumaquamarine;
+}
+#after-middle submit:hover{
+    background-color: antiquewhite;
+    color:red;
+}
+.dadu1{
     width: 150px;
     height: 60px;
     border: 5px solid rgb(255, 244, 128);
@@ -137,11 +153,11 @@ img{
     z-index: 1;
     text-align: center;
     line-height: 60px;
-    color: #f89bb4;
+    color: maroon;
     font-size: 26px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
-#dadu2{
+.dadu2{
     width: 150px;
     height: 60px;
     border: 5px solid rgb(255, 244, 128);
@@ -155,11 +171,11 @@ img{
     z-index: 1;
     text-align: center;
     line-height: 60px;
-    color: #f89bb4;
+    color: maroon;
     font-size: 26px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
-#dadu3{
+.dadu3{
     width: 150px;
     height: 60px;
     border: 5px solid rgb(255, 244, 128);
@@ -173,30 +189,33 @@ img{
     z-index: 1;
     text-align: center;
     line-height: 60px;
-    color: #f89bb4;
+    color: maroon;
     font-size: 26px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 #jumlah{
-    width: 150px;
-    height: 50px;
-    border: 5px solid rgba(250, 51, 2, 0.899);
+    width: 250px;
+    height:60px;
+    border: 5px solid rgb(255, 244, 128);
     position: relative;
     left: 3.8%;
     margin-left: -75px;
-    top: 60%;
+    top:10px;
     margin-top: -30px;
     background-color: rgb(152, 146, 146);
     border-radius: 25px;
     z-index: 1;
     text-align: center;
     line-height: 60px;
-    color: #f89bb4;
+    color: maroon;
     font-size: 23px;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
-#jumlah{
-    top : -15px;
+#tengah .balance{
+    font-size: 20px;
+    margin:25px 0px;
+    top:-25px;
+    position: relative;
 }
 #after-middle{
     top : -20px;
@@ -254,8 +273,18 @@ img{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#role{
+    position: relative;
+    top:25px;
+    color:blanchedalmond;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /*===============================*/
 
+h7{
+    font-size: 20px;
+}
 
 #bawah {
     height : 150px;

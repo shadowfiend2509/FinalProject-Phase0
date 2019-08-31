@@ -23,12 +23,9 @@ kertas.addEventListener('click',function(){
         hasil = 'SERI!';
     }else if(compt === 'BATU'){
         hasil ='MENANG!';
+        jumlah++;
     }else{
         hasil = 'KALAH!';
-    }
-    if(hasil === 'MENANG!'){
-        jumlah++;
-    }else if(hasil === 'KALAH!'){
         jumlah--;
     }
     scoree.innerHTML = jumlah;
@@ -43,6 +40,7 @@ kertas.addEventListener('click',function(){
         peran.innerHTML = 'Profesional';
     }else if(jumlah===-5){
         alert('LOOSER LoL');
+        peran.innerHTML = 'LOOSER!';
     }
 })
 
@@ -55,13 +53,10 @@ gunting.addEventListener('click',function(){
         hasil = 'SERI!';
     }else if(compt === 'BATU'){
         hasil = 'KALAH!';
+        jumlah--
     }else{
         hasil = 'MENANG!';
-    }
-    if(hasil === 'MENANG!'){
         jumlah++
-    }else if(hasil === 'KALAH!'){
-        jumlah--
     }
     scoree.innerHTML = jumlah;
     komputer.innerHTML = compt;
@@ -75,6 +70,7 @@ gunting.addEventListener('click',function(){
         peran.innerHTML = 'Profesional';
     }else if(jumlah===-5){
         alert('LOOSER LoL');
+        peran.innerHTML = 'LOOSER!';
     }
 })
 
@@ -89,13 +85,10 @@ batu.addEventListener('click',function(){
         hasil = 'SERI!';
     }else if(compt === 'KERTAS'){
         hasil = 'KALAH!';
+        jumlah--
     }else{
         hasil = 'MENANG!';
-    }
-    if(hasil === 'MENANG!'){
         jumlah++
-    }else if(hasil === 'KALAH!'){
-        jumlah--
     }
     scoree.innerHTML = jumlah
     komputer.innerHTML = compt ;
