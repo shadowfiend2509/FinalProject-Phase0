@@ -9,11 +9,7 @@ function computer1(){
 }
 
 // //==================================
-// var computer1 = computer1();
-// const dadupertama = document.querySelector('#middle .dadu1');
-// dadupertama.innerHTML = computer1;
 
-// //==================================
 function computer2(){
     const comp1 = Math.random()
     if(comp1<0.15) return 1;
@@ -25,11 +21,7 @@ function computer2(){
 }
 
 // //==================================
-// var computer2 = computer2();
-// const dadukedua = document.querySelector('#middle .dadu2');
-// dadukedua.innerHTML = computer2;
 
-// //==================================
 function computer3 () {
     const comp2 = Math.random()
     if(comp2<0.15) return 1;
@@ -41,53 +33,11 @@ function computer3 () {
 }
 
 // //==================================
-// var computer3 = computer3();
-// const daduketiga = document.querySelector('#middle .dadu3');
-
-// daduketiga.innerHTML = computer3;
-
-// //==================================
 
 function jumlahcomputer(){
     const jumlahcom = computer1+computer2+computer3;
     return jumlahcom
 }
-
-// const jumlahcomm = jumlahcomputer();
-// var hasill = document.querySelector('#jumlah');
-// hasill.innerHTML = jumlahcomm;
-
-// //==================================
-
-// const after = document.getElementById('after-middle');
-
-// //==================================
-
-// const child = after.children[0]
-// child.addEventListener('click',function(){
-//     const resultt = jumlahcomputer();
-//     if(resultt>10){
-//         alert(resultt+' Kamu Benar!');
-//     }else{
-//         alert(resultt+' Kamu Salah!');
-//     }  
-// })
-
-// // const child2 = after.children[1]
-// // child2.addEventListener('click',function(){
-// //     const resultt = jumlahcomputer();
-// //     if(resultt<10){
-// //         alert(resultt+' Kamu Benar!');
-// //     }else{
-// //         alert(resultt+' Kamu Salah!');
-// //     }
-// // })
-
-
-// const rule = document.getElementById('role');
-// rule.innerHTML = 'Role: 3-10 = Kecil | 11-16 = Besar<br>Hati-hati angka yang di tampilkan bisa menipu!!'
-// rule.style.fontSize = '19px';
-
 
 /**
  * ===================================
@@ -97,14 +47,9 @@ const timer = setTimeout(function(){
     location.reload();
 },3000); // 5000 milliseconds atau 5 seconds.
 
-
-
 const aftermiddle = document.getElementById('after-middle');
 
-
-
 const buttonBesar = document.getElementById('button1');
-
 
 const buttonKecil = document.getElementById('button2');
 
@@ -163,7 +108,6 @@ buttonKecil.addEventListener('click',function(){
     })
     buttonKecil.innerHTML = '<h7>Akan reset setelah </h7>'+setTimer+' <h7>detik</h7>';
 })
-
 
 const rule = document.getElementById('role');
 rule.innerHTML = 'Role: 3-10 = Kecil | 11-16 = Besar<br>Hati-hati angka yang di tampilkan bisa menipu!!'
