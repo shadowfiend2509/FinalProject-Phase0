@@ -11,9 +11,14 @@ const kertas = document.getElementById('kertas');
 
 const outputt = document.getElementById('hasiloutput');
 
+var jumlah = 0
+const scoree = document.getElementById('score')
+
+var peran = document.getElementById('peran')
+
 kertas.addEventListener('click',function(){
     let compt = pilihancomp();
-    let hasil = ''
+    var hasil = ''
     if(compt === 'KERTAS'){
         hasil = 'SERI!';
     }else if(compt === 'BATU'){
@@ -21,14 +26,31 @@ kertas.addEventListener('click',function(){
     }else{
         hasil = 'KALAH!';
     }
+    if(hasil === 'MENANG!'){
+        jumlah++;
+    }else if(hasil === 'KALAH!'){
+        jumlah--;
+    }
+    scoree.innerHTML = jumlah;
     komputer.innerHTML = compt;
     outputt.innerHTML = hasil;
+    if(jumlah>5 && jumlah<10){
+        peran.innerHTML = 'Junior';
+    }else if(jumlah>9 && jumlah<16){
+        peran.innerHTML = 'Senior';
+    }else if(jumlah===16){
+        alert('Anda menyentuh peran Profesional...Screenshot dan kirim ke Email saya yang berada di Home untuk Claim Hadiah nya LoL');
+        peran.innerHTML = 'Profesional';
+    }else if(jumlah===-5){
+        alert('LOOSER LoL');
+    }
 })
+
 
 const gunting = document.getElementById('gunting');
 gunting.addEventListener('click',function(){
     let compt = pilihancomp();
-    let ahsil = '';
+    var hasil = '';
     if(compt === 'GUNTING'){
         hasil = 'SERI!';
     }else if(compt === 'BATU'){
@@ -36,8 +58,24 @@ gunting.addEventListener('click',function(){
     }else{
         hasil = 'MENANG!';
     }
+    if(hasil === 'MENANG!'){
+        jumlah++
+    }else if(hasil === 'KALAH!'){
+        jumlah--
+    }
+    scoree.innerHTML = jumlah;
     komputer.innerHTML = compt;
     outputt.innerHTML = hasil;
+    if(jumlah>5 && jumlah<10){
+        peran.innerHTML = 'Junior';
+    }else if(jumlah>9 && jumlah<16){
+        peran.innerHTML = 'Senior';
+    }else if(jumlah===16){
+        alert('Anda menyentuh peran Profesional...Screenshot dan kirim ke Email saya yang berada di Home untuk Claim Hadiah nya LoL');
+        peran.innerHTML = 'Profesional';
+    }else if(jumlah===-5){
+        alert('LOOSER LoL');
+    }
 })
 
 
@@ -46,7 +84,7 @@ const batu = document.getElementById('batu');
 
 batu.addEventListener('click',function(){
     let compt = pilihancomp();
-    let hasil = '';
+    var hasil = '';
     if(compt === 'BATU'){
         hasil = 'SERI!';
     }else if(compt === 'KERTAS'){
@@ -54,6 +92,25 @@ batu.addEventListener('click',function(){
     }else{
         hasil = 'MENANG!';
     }
+    if(hasil === 'MENANG!'){
+        jumlah++
+    }else if(hasil === 'KALAH!'){
+        jumlah--
+    }
+    scoree.innerHTML = jumlah
     komputer.innerHTML = compt ;
     outputt.innerHTML = hasil;
+    if(jumlah>5 && jumlah<10){
+        peran.innerHTML = 'Junior';
+    }else if(jumlah>9 && jumlah<16){
+        peran.innerHTML = 'Senior';
+    }else if(jumlah===16){
+        alert('Anda menyentuh peran Profesional...Screenshot dan kirim ke Email saya yang berada di Home untuk Claim Hadiah nya LoL');
+        peran.innerHTML = 'Profesional';
+    }else if(jumlah===-5){
+        alert('LOOSER LoL');
+    }
 })
+
+const role = document.getElementById('role1');
+role.innerHTML = 'ROLE : <br> Diawal permainan peran anda adalah newbie..<br>Untuk mendapatkan peran junior cukup menang dengan point 6..<br>Untuk mendapatkan peran Senior cukup capai point 10..<br>Capailah peran Profesional dan dapatkan pesan..<br>Setiap Anda kalah maka score berkurang satu..<br>jangan sampai dapat peringatan Loser..<h4>Selamat Mencoba!!</h4>'
